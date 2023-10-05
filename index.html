@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title_page">Jogo da Velha - Local</title>
+    <link rel="stylesheet" href="/files/css/style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Jogo da Velha</h1>
+        
+        <div class="score-card">
+           <div>
+                <img src="/files/imgs/X.png" class="player_icon">
+                <label class="player_score" value="X">0</label>
+           </div>
+
+           <div class="player_score"> - </div>
+
+           <div>
+                <label class="player_score" value="O">0</label>
+                <img src="/files/imgs/O.png" class="player_icon">
+           </div>
+           
+        </div>
+
+
+        <label id="message_game"></label>
+
+        <table>
+            <tr>
+                <td class="slot" value="1" player=""></td>
+                <td class="slot" value="2" player=""></td>
+                <td class="slot" value="3" player=""></td>
+            </tr>
+            <tr>
+                <td class="slot" value="4" player=""></td>
+                <td class="slot" value="5" player=""></td>
+                <td class="slot" value="6" player=""></td>
+            </tr>
+            <tr>
+                <td class="slot" value="7" player=""></td>
+                <td class="slot" value="8" player=""></td>
+                <td class="slot" value="9" player=""></td>
+            </tr>
+        </table>
+
+        <button id='reset' class="btn disabled">Reniciar</button>
+    </div>
+
+    <script src="/files/js/event.js"></script>
+    <script src="/files/js/game.js"></script>
+</body>
+
+</html>
