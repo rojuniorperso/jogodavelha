@@ -33,7 +33,7 @@ function ChangeImageSlot(slotSelect) {
 
     if (slotSelect.getAttribute('player') == '') {
         slotSelect.setAttribute('player', Configuration.Player)
-        slotSelect.style['background-image'] = `url('files/imgs/${Configuration.Player}.png')`
+        slotSelect.style['background-image'] = `url('./files/imgs/${Configuration.Player}.png')`
         return true
     }
     return false
